@@ -922,6 +922,7 @@ int QRcode_encodeStringToU8Array(unsigned char *instr, int instr_len, unsigned i
 	return 0;
 }
 
+#ifdef _CVI_
 //==============================================================================
 // DLL main entry-point functions
 
@@ -943,3 +944,4 @@ int __stdcall DllEntryPoint (HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvRese
 
     return DllMain (hinstDLL, fdwReason, lpvReserved);
 }
+#endif
